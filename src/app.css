@@ -1,0 +1,39 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  --text: #242424;
+  --background: #F0F1F5;
+  --primary: #38384D;
+  --secondary: #A89DB8;
+  --accent: #705C7F;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #F0F0F4;
+    --background: #242424;
+    --primary: #B1B1C6;
+    --secondary: #524762;
+    --accent: #937FA2;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+#app {
+  width: 100%;
+  height: 100dvh;
+  padding: 40px;
+}
